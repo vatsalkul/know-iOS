@@ -10,7 +10,7 @@ import UIKit
 
 class NetworkManager {
     static let shared = NetworkManager()
-    private let baseUrl = "http://127.0.0.1:5000/"
+    private let baseUrl = "http://know-corona.herokuapp.com/"
     let cache = NSCache<NSString, UIImage>()
     
     func getNotifications(completed: @escaping (Result<[Notification], KNError>) -> Void) {

@@ -16,6 +16,8 @@ class NotificationTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        NotificationImageView.layer.cornerRadius = 6.0
+        NotificationImageView.layer.masksToBounds = true
         
     }
 

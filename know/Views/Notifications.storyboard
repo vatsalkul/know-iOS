@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fJ6-Y9-E6y">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notifications-->
+        <scene sceneID="KNC-0D-BWu">
+            <objects>
+                <viewController id="DUj-Ls-juU" customClass="NotificationViewController" customModule="know" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NLH-bC-hD6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WCc-gK-ZMs">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="82" id="Qmj-VZ-sau" customClass="NotificationTableViewCell" customModule="know" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="82"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Qmj-VZ-sau" id="8XV-05-fMu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="82"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKA-V5-h8x">
+                                                    <rect key="frame" x="100" y="10" width="304" height="62"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notification" translatesAutoresizingMaskIntoConstraints="NO" id="UTa-vX-qrD">
+                                                    <rect key="frame" x="12" y="10" width="80" height="62"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="62" id="2TD-jw-Mht"/>
+                                                        <constraint firstAttribute="width" constant="80" id="5ox-Th-zaf"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="UTa-vX-qrD" firstAttribute="leading" secondItem="8XV-05-fMu" secondAttribute="leading" constant="12" id="8sX-0m-nhL"/>
+                                                <constraint firstItem="bKA-V5-h8x" firstAttribute="leading" secondItem="UTa-vX-qrD" secondAttribute="trailing" constant="8" id="ETo-Je-7s9"/>
+                                                <constraint firstAttribute="bottom" secondItem="UTa-vX-qrD" secondAttribute="bottom" constant="10" id="br7-Dz-tST"/>
+                                                <constraint firstItem="UTa-vX-qrD" firstAttribute="centerY" secondItem="8XV-05-fMu" secondAttribute="centerY" id="bsq-j7-2pc"/>
+                                                <constraint firstItem="bKA-V5-h8x" firstAttribute="top" secondItem="8XV-05-fMu" secondAttribute="top" constant="10" id="cWC-KF-UVx"/>
+                                                <constraint firstAttribute="trailing" secondItem="bKA-V5-h8x" secondAttribute="trailing" constant="10" id="f8Z-ty-A7m"/>
+                                                <constraint firstItem="UTa-vX-qrD" firstAttribute="top" secondItem="8XV-05-fMu" secondAttribute="top" constant="10" id="qkG-zO-vF9"/>
+                                                <constraint firstAttribute="bottom" secondItem="bKA-V5-h8x" secondAttribute="bottom" constant="10" id="zVN-Sl-V4h"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="NotificationImageView" destination="UTa-vX-qrD" id="vu6-ok-q2j"/>
+                                            <outlet property="titleLabel" destination="bKA-V5-h8x" id="rWw-n3-pNc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WCc-gK-ZMs" firstAttribute="top" secondItem="rbS-CE-Gb1" secondAttribute="top" id="Rm7-h1-Aqz"/>
+                            <constraint firstItem="WCc-gK-ZMs" firstAttribute="trailing" secondItem="rbS-CE-Gb1" secondAttribute="trailing" id="Wvk-WN-FnJ"/>
+                            <constraint firstItem="WCc-gK-ZMs" firstAttribute="bottom" secondItem="rbS-CE-Gb1" secondAttribute="bottom" id="XaX-qq-yyP"/>
+                            <constraint firstItem="WCc-gK-ZMs" firstAttribute="leading" secondItem="rbS-CE-Gb1" secondAttribute="leading" id="bRp-5B-1wx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rbS-CE-Gb1"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Notifications" largeTitleDisplayMode="always" id="sDb-XS-QKf"/>
+                    <connections>
+                        <outlet property="tableView" destination="WCc-gK-ZMs" id="rUy-8o-eii"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="irw-2n-t9U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4955.625" y="726.76056338028172"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PuN-cx-rDh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fJ6-Y9-E6y" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="bell.fill" catalog="system" id="cu8-Hs-FDg"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ZUQ-lV-7oc">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DUj-Ls-juU" kind="relationship" relationship="rootViewController" id="Lic-dI-wS6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asn-1F-KVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4046.25" y="727.81690140845069"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bell.fill" catalog="system" width="64" height="62"/>
+        <image name="notification" width="74" height="50"/>
+    </resources>
+</document>

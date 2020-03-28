@@ -7,5 +7,6 @@ target 'know' do
 
   # Pods for know
    pod 'Charts'
+   pod "UPCarouselFlowLayout"
 
 end

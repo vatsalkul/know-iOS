@@ -23,6 +23,8 @@ class NotificationViewController: UIViewController {
     
     
     func setupTableView() {
+        //Data source and delegate setup of collection view
+        tableView.tableFooterView = UIView()
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -38,22 +40,23 @@ class NotificationViewController: UIViewController {
             case.success(let notifications):
                 
                 self.allNotifications = notifications
+                //Update table view with fetched data
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
+                
             case.failure(let error):
                 self.presentKNAlertOnMainThread(title: "Something went wrong", message: error.rawValue)
                 
             }
-            
         }
-        
     }
 }
 
 extension NotificationViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //Number of notification from server
         return allNotifications.count
     }
     
@@ -61,6 +64,8 @@ extension NotificationViewController: UITableViewDelegate, UITableViewDataSource
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as? NotificationTableViewCell else {return UITableViewCell()}
         
         if let imageUrl = URL(string: allNotifications[indexPath.row].image) {
+            
+            //Download image asynchronously
             DispatchQueue.global().async {
                 let data = try? Data(contentsOf: imageUrl)
                 if let data = data {
@@ -73,8 +78,6 @@ extension NotificationViewController: UITableViewDelegate, UITableViewDataSource
             
         }
         cell.titleLabel.text = String(allNotifications[indexPath.row].title)
-        cell.NotificationImageView.layer.cornerRadius = 6.0
-        cell.NotificationImageView.layer.masksToBounds = true
         return cell
     }
     

@@ -21,6 +21,12 @@
 		8305FF64242CF5CE00C44F44 /* KNErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305FF63242CF5CE00C44F44 /* KNErrors.swift */; };
 		8305FF66242D37CB00C44F44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305FF65242D37CB00C44F44 /* HomeViewController.swift */; };
 		8305FF68242D38A000C44F44 /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305FF67242D38A000C44F44 /* Dashboard.swift */; };
+		831FCAEF242FD3A9003D677C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831FCAEE242FD3A9003D677C /* Home.storyboard */; };
+		831FCAF1242FD3C1003D677C /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831FCAF0242FD3C1003D677C /* Guide.storyboard */; };
+		831FCAF3242FD3CB003D677C /* Stats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831FCAF2242FD3CB003D677C /* Stats.storyboard */; };
+		831FCAF5242FD3DC003D677C /* Announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831FCAF4242FD3DC003D677C /* Announcements.storyboard */; };
+		831FCAF7242FD3E4003D677C /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831FCAF6242FD3E4003D677C /* Notifications.storyboard */; };
+		831FCAFA242FD7A2003D677C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FCAF9242FD7A2003D677C /* HomeCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		8305FF63242CF5CE00C44F44 /* KNErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNErrors.swift; sourceTree = "<group>"; };
 		8305FF65242D37CB00C44F44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8305FF67242D38A000C44F44 /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		831FCAEE242FD3A9003D677C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		831FCAF0242FD3C1003D677C /* Guide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
+		831FCAF2242FD3CB003D677C /* Stats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stats.storyboard; sourceTree = "<group>"; };
+		831FCAF4242FD3DC003D677C /* Announcements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Announcements.storyboard; sourceTree = "<group>"; };
+		831FCAF6242FD3E4003D677C /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
+		831FCAF9242FD7A2003D677C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		AFA4CBDE58418CCD56110612 /* Pods-know.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-know.debug.xcconfig"; path = "Target Support Files/Pods-know/Pods-know.debug.xcconfig"; sourceTree = "<group>"; };
 		BA055879890151EE13D4282F /* Pods-know.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-know.release.xcconfig"; path = "Target Support Files/Pods-know/Pods-know.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,9 +112,9 @@
 				8305FF58242CE56300C44F44 /* Models */,
 				8305FF5E242CF28100C44F44 /* Cells */,
 				8305FF5D242CF27100C44F44 /* ViewControllers */,
+				831FCAF8242FD6A3003D677C /* Views */,
 				8305FF41242CB3A300C44F44 /* AppDelegate.swift */,
 				8305FF43242CB3A300C44F44 /* SceneDelegate.swift */,
-				8305FF47242CB3A300C44F44 /* Main.storyboard */,
 				8305FF4A242CB3A700C44F44 /* Assets.xcassets */,
 				8305FF4C242CB3A700C44F44 /* LaunchScreen.storyboard */,
 				8305FF4F242CB3A700C44F44 /* Info.plist */,
@@ -140,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				8305FF5B242CEA6700C44F44 /* NotificationTableViewCell.swift */,
+				831FCAF9242FD7A2003D677C /* HomeCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -158,6 +171,19 @@
 				8305FF63242CF5CE00C44F44 /* KNErrors.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		831FCAF8242FD6A3003D677C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8305FF47242CB3A300C44F44 /* Main.storyboard */,
+				831FCAEE242FD3A9003D677C /* Home.storyboard */,
+				831FCAF0242FD3C1003D677C /* Guide.storyboard */,
+				831FCAF2242FD3CB003D677C /* Stats.storyboard */,
+				831FCAF4242FD3DC003D677C /* Announcements.storyboard */,
+				831FCAF6242FD3E4003D677C /* Notifications.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,9 +246,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				831FCAF3242FD3CB003D677C /* Stats.storyboard in Resources */,
+				831FCAF7242FD3E4003D677C /* Notifications.storyboard in Resources */,
+				831FCAF5242FD3DC003D677C /* Announcements.storyboard in Resources */,
+				831FCAF1242FD3C1003D677C /* Guide.storyboard in Resources */,
 				8305FF4E242CB3A700C44F44 /* LaunchScreen.storyboard in Resources */,
 				8305FF4B242CB3A700C44F44 /* Assets.xcassets in Resources */,
 				8305FF49242CB3A300C44F44 /* Main.storyboard in Resources */,
+				831FCAEF242FD3A9003D677C /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +312,7 @@
 				8305FF61242CF40F00C44F44 /* UIViewController+Ext.swift in Sources */,
 				8305FF57242CE54000C44F44 /* NetworkManager.swift in Sources */,
 				8305FF46242CB3A300C44F44 /* NotificationViewController.swift in Sources */,
+				831FCAFA242FD7A2003D677C /* HomeCollectionViewCell.swift in Sources */,
 				8305FF66242D37CB00C44F44 /* HomeViewController.swift in Sources */,
 				8305FF42242CB3A300C44F44 /* AppDelegate.swift in Sources */,
 				8305FF44242CB3A300C44F44 /* SceneDelegate.swift in Sources */,
