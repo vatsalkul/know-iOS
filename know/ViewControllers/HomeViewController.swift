@@ -110,7 +110,7 @@ class HomeViewController: UIViewController {
         
         //Defining layout od collection view
         let flowLayout = UPCarouselFlowLayout()
-        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width - 60, height: collectionView.frame.size.height - 150)
+        flowLayout.itemSize = CGSize(width: UIScreen.main.bounds.width - 60, height: collectionView.frame.size.height - 100)
         flowLayout.scrollDirection = .horizontal
         flowLayout.sideItemScale = 0.8
         flowLayout.sideItemAlpha = 1.0
