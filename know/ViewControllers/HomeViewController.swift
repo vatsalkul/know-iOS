@@ -63,6 +63,7 @@ class HomeViewController: UIViewController {
     
     
     func getHome() {
+        
         showLoadingScreen()
         NetworkManager.shared.getDashboard() { [weak self] (result) in
             guard let self = self else { return }
@@ -136,4 +137,14 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return cell
     }
     
+}
+extension UIViewController {
+    func presentDetailViewOnMainThread(state: String, body: String, buttonTitle: String){
+        DispatchQueue.main.async {
+            let alertVC = CustomViewController(state: state, body: body, buttonTitle: buttonTitle)
+            alertVC.modalPresentationStyle = .overFullScreen
+            alertVC.modalTransitionStyle =  .crossDissolve
+            self.present(alertVC, animated: true)
+        }
+    }
 }
