@@ -33,9 +33,21 @@
 		831FCAF5242FD3DC003D677C /* Announcements.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831FCAF4242FD3DC003D677C /* Announcements.storyboard */; };
 		831FCAF7242FD3E4003D677C /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831FCAF6242FD3E4003D677C /* Notifications.storyboard */; };
 		831FCAFA242FD7A2003D677C /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831FCAF9242FD7A2003D677C /* HomeCollectionViewCell.swift */; };
+		832D1B1E244CE0EA009D05B4 /* knowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D1B1D244CE0EA009D05B4 /* knowTests.swift */; };
+		832D1B28244CE1FB009D05B4 /* HomeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832D1B27244CE1FB009D05B4 /* HomeTest.swift */; };
 		83B1FA7124372BD000D5B27E /* WorldStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1FA7024372BD000D5B27E /* WorldStats.swift */; };
 		83B1FA7324372F1500D5B27E /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B1FA7224372F1500D5B27E /* StatsViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		832D1B20244CE0EA009D05B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8305FF36242CB3A300C44F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8305FF3D242CB3A300C44F44;
+			remoteInfo = know;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3253317DB15FA5D8D5F14CF0 /* Pods_know.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_know.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +78,10 @@
 		831FCAF4242FD3DC003D677C /* Announcements.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Announcements.storyboard; sourceTree = "<group>"; };
 		831FCAF6242FD3E4003D677C /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		831FCAF9242FD7A2003D677C /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		832D1B1B244CE0EA009D05B4 /* knowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = knowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		832D1B1D244CE0EA009D05B4 /* knowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knowTests.swift; sourceTree = "<group>"; };
+		832D1B1F244CE0EA009D05B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832D1B27244CE1FB009D05B4 /* HomeTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTest.swift; sourceTree = "<group>"; };
 		83B1FA7024372BD000D5B27E /* WorldStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldStats.swift; sourceTree = "<group>"; };
 		83B1FA7224372F1500D5B27E /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
 		AFA4CBDE58418CCD56110612 /* Pods-know.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-know.debug.xcconfig"; path = "Target Support Files/Pods-know/Pods-know.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +94,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5555291E65DEA0CE807934E5 /* Pods_know.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832D1B18244CE0EA009D05B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				8305FF40242CB3A300C44F44 /* know */,
+				832D1B1C244CE0EA009D05B4 /* knowTests */,
 				8305FF3F242CB3A300C44F44 /* Products */,
 				7934CD4CA9AA3E19D0B9661F /* Pods */,
 				7A8313355483607AAB391170 /* Frameworks */,
@@ -115,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				8305FF3E242CB3A300C44F44 /* know.app */,
+				832D1B1B244CE0EA009D05B4 /* knowTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,6 +235,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		832D1B1C244CE0EA009D05B4 /* knowTests */ = {
+			isa = PBXGroup;
+			children = (
+				832D1B1D244CE0EA009D05B4 /* knowTests.swift */,
+				832D1B1F244CE0EA009D05B4 /* Info.plist */,
+				832D1B27244CE1FB009D05B4 /* HomeTest.swift */,
+			);
+			path = knowTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -232,6 +267,24 @@
 			productReference = 8305FF3E242CB3A300C44F44 /* know.app */;
 			productType = "com.apple.product-type.application";
 		};
+		832D1B1A244CE0EA009D05B4 /* knowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 832D1B24244CE0EA009D05B4 /* Build configuration list for PBXNativeTarget "knowTests" */;
+			buildPhases = (
+				832D1B17244CE0EA009D05B4 /* Sources */,
+				832D1B18244CE0EA009D05B4 /* Frameworks */,
+				832D1B19244CE0EA009D05B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				832D1B21244CE0EA009D05B4 /* PBXTargetDependency */,
+			);
+			name = knowTests;
+			productName = knowTests;
+			productReference = 832D1B1B244CE0EA009D05B4 /* knowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +297,10 @@
 				TargetAttributes = {
 					8305FF3D242CB3A300C44F44 = {
 						CreatedOnToolsVersion = 11.3.1;
+					};
+					832D1B1A244CE0EA009D05B4 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8305FF3D242CB3A300C44F44;
 					};
 				};
 			};
@@ -261,6 +318,7 @@
 			projectRoot = "";
 			targets = (
 				8305FF3D242CB3A300C44F44 /* know */,
+				832D1B1A244CE0EA009D05B4 /* knowTests */,
 			);
 		};
 /* End PBXProject section */
@@ -278,6 +336,13 @@
 				8305FF4B242CB3A700C44F44 /* Assets.xcassets in Resources */,
 				8305FF49242CB3A300C44F44 /* Main.storyboard in Resources */,
 				831FCAEF242FD3A9003D677C /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		832D1B19244CE0EA009D05B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,7 +417,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		832D1B17244CE0EA009D05B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				832D1B28244CE1FB009D05B4 /* HomeTest.swift in Sources */,
+				832D1B1E244CE0EA009D05B4 /* knowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		832D1B21244CE0EA009D05B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8305FF3D242CB3A300C44F44 /* know */;
+			targetProxy = 832D1B20244CE0EA009D05B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8305FF47242CB3A300C44F44 /* Main.storyboard */ = {
@@ -495,7 +577,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RG8WZR6JK3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = know/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,7 +598,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RG8WZR6JK3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = know/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,6 +609,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		832D1B22244CE0EA009D05B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG8WZR6JK3;
+				INFOPLIST_FILE = knowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vatsalkulshreshtha.me.knowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/know.app/know";
+			};
+			name = Debug;
+		};
+		832D1B23244CE0EA009D05B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RG8WZR6JK3;
+				INFOPLIST_FILE = knowTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vatsalkulshreshtha.me.knowTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/know.app/know";
 			};
 			name = Release;
 		};
@@ -543,6 +669,15 @@
 			buildConfigurations = (
 				8305FF53242CB3A700C44F44 /* Debug */,
 				8305FF54242CB3A700C44F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		832D1B24244CE0EA009D05B4 /* Build configuration list for PBXNativeTarget "knowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				832D1B22244CE0EA009D05B4 /* Debug */,
+				832D1B23244CE0EA009D05B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
