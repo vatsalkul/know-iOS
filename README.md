@@ -3,6 +3,8 @@
 
 # know-Corona
 
+[![Build Status](https://travis-ci.com/vatsalkul/know-iOS.svg?branch=master)](https://travis-ci.com/vatsalkul/know-iOS)
+
 An attempt to raise awareness around the Covid-19 pandemic amongst the community.
 
 ![Yellow Black Jazz Music Youtube Channel Art](https://user-images.githubusercontent.com/30840527/77834033-9d215900-7167-11ea-836a-a05035129bdf.png)
